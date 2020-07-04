@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/white">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/tv_username"
+        android:text="Please input your name."
+        android:textColor="@color/text_color"
+        app:fontFamily="sans-serif" />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/et_username"
+        android:inputType="text"
+        app:fontFamily="sans-serif" />
+
+    <TextView
+        android:id="@+id/tv_companynumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please input your company number."
+        android:textColor="@color/text_color"
+        app:fontFamily="sans-serif" />
+    <EditText
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/et_companynumber"
+        android:inputType="numberDecimal"
+        app:fontFamily="sans-serif" />
+<!--    <TextView-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:id="@+id/TextView_PwdProblem"-->
+<!--        android:textStyle="bold"-->
+<!--        android:gravity="center" />-->
+</LinearLayout>

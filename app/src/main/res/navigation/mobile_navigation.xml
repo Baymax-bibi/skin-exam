@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nave_dashboard">
+
+    <fragment
+        android:id="@+id/nave_dashboard"
+        android:name="com.skinexam.myapplication.ui.dashboard.DashboardFragment"
+        android:label="@string/menu_dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <!--<fragment
+        android:id="@+id/nav_myPlan"
+        android:name="com.skinexam.myapplication.ui.activityplan.ActivityPlanFragment"
+        android:label="@string/menu_myplan"
+        tools:layout="@layout/fragment_myplan" />-->
+
+    <fragment
+        android:id="@+id/nav_subScription"
+        android:name="com.skinexam.myapplication.ui.subscription.SubscriptionFragment"
+        android:label="@string/menu_subscription"
+        tools:layout="@layout/fragment_subscription" />
+
+    <fragment
+        android:id="@+id/nav_mycase"
+        android:name="com.skinexam.myapplication.ui.mycase.MycaseFragment"
+        android:label="@string/menu_mycase"
+        tools:layout="@layout/fragment_mycase" />
+
+    <fragment
+        android:id="@+id/nav_newcase"
+        android:name="com.skinexam.myapplication.ui.newcase.NewcaseFragment"
+        android:label="@string/menu_newcase"
+        tools:layout="@layout/fragment_mycase"
+        />
+
+    <!--<fragment
+        android:id="@+id/nav_history"
+        android:name="com.skinexam.myapplication.ui.history.HistoryFragment"
+        android:label="@string/menu_history"
+        tools:layout="@layout/fragment_history" />-->
+
+    <fragment
+        android:id="@+id/nav_changePwd"
+        android:name="com.skinexam.myapplication.ui.changepwd.ChangePwdFragment"
+        android:label="@string/menu_changepwd"
+        tools:layout="@layout/fragment_changepwd" />
+
+    <fragment
+        android:id="@+id/nav_editProfile"
+        android:name="com.skinexam.myapplication.ui.editprofile.EditprofileFragment"
+        android:label="@string/edit_profile"
+        tools:layout="@layout/fragment_editprofile" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.skinexam.myapplication.ui.logout.LogOutFragment"
+        android:label="@string/menu_logout"
+        tools:layout="@layout/fragment_logout" />
+</navigation>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nave_dashboard"
+            android:icon="@mipmap/dashboard"
+            android:title="@string/menu_dashboard" />
+        <!--<item
+            android:id="@+id/nav_myPlan"
+            android:icon="@mipmap/active_plan"
+            android:title="@string/plan" />-->
+
+        <item
+            android:id="@+id/nav_mycase"
+            android:icon="@mipmap/mycase"
+            android:title="@string/myCase" />
+        <item
+            android:id="@+id/nav_newcase"
+            android:icon="@drawable/addcase"
+            android:title="@string/newCase" />
+        <!--<item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/history"
+            android:title="@string/history" />-->
+    </group>
+
+    <item android:title="Setting">
+        <menu>
+            <item
+                android:id="@+id/nav_changePwd"
+                android:icon="@mipmap/change_pwd"
+                android:title="@string/ch_pass" />
+            <item
+                android:id="@+id/nav_subScription"
+                android:icon="@drawable/subscription"
+                android:title="@string/subscription" />
+            <item
+                android:id="@+id/nav_editProfile"
+                android:icon="@drawable/edit_profile_personal"
+                android:title="@string/edit_profile" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@mipmap/logout"
+                android:title="@string/log_out" />
+        </menu>
+    </item>
+
+</menu>

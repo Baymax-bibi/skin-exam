@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#dd3cb029</color>
+    <color name="colorPrimaryDark">#555555</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="actionbar_back">#474747</color>
+    <color name="navigation_drawer_bg">#FCF4DB</color>
+    <color name="text_color">#636360</color>
+    <color name="hint_color">#dd636363</color>
+    <color name="view_color">#99636363</color>
+
+    <color name="btn_bg">#D92E3B</color>
+    <color name="color_red_focused">#c31c13</color>
+    <color name="color_red_pressed">#c31c13</color>
+    <color name="color_red_normal">#c31c13</color>
+    <color name="nav_drawer_bg">#f2c67f</color>
+    <color name="myPrimaryDarkColor">#ffff2149</color>
+    <color name="footer">#eeeeee</color>
+    <color name="choose">#FFC107</color>
+    <color name="ColorPrimary">#F8F8F8</color>
+    <color name="ColorPrimaryDark">#c31c13</color>
+    <color name="tabsScrollColor">#F07925</color>
+    <color name="news">#FFF6D7</color>
+    <color name="gray">#eeeeee</color>
+    <color name="blue">#336AF8</color>
+    <color name="black">#000000</color>
+    <color name="lightColor">#ccF3F3F3</color>
+    <color name="light_primary">#45B4B2B2</color>
+
+</resources>

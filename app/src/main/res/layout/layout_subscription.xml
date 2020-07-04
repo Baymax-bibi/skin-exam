@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img_dashbord">
+
+    <RelativeLayout
+        android:id="@+id/screen_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <ImageView
+            android:id="@+id/image_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            />
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="sans-serif"
+            android:padding="20dp"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:textColor="#F89106"
+            android:textStyle="bold"
+            android:layout_below="@id/image_1"
+            android:text="$ 5 / Month"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="sans-serif"
+            android:layout_below="@id/text_2"
+            android:padding="10dp"
+            android:text="Retain your photos for later comparison"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="12sp"
+            android:gravity="center_horizontal" />
+
+        <TextView
+            android:id="@+id/text_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="sans-serif"
+            android:layout_below="@id/text_3"
+            android:padding="10dp"
+            android:text="Our experts can compare your before and after photos"
+            android:textAlignment="center"
+            android:textColor="@color/text_color"
+            android:textSize="14sp"
+            android:gravity="center_horizontal" />
+
+        <Button
+            android:id="@+id/subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fontFamily="sans-serif"
+            android:layout_below="@id/text_4"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/mybutton"
+            android:textSize="15sp"
+            android:padding="15dp"
+            android:layout_centerHorizontal="true"
+            android:text="Subscribe"
+            android:gravity="center_horizontal" />
+    </RelativeLayout>
+
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="1"-->
+<!--        android:orientation="vertical"></LinearLayout>-->
+
+<!--    <GridLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="8"-->
+<!--        android:alignmentMode="alignMargins"-->
+<!--        android:columnCount="2"-->
+<!--        android:columnOrderPreserved="false"-->
+<!--        android:rowCount="2">-->
+
+<!--        &lt;!&ndash;        row&ndash;&gt;-->
+<!--        &lt;!&ndash;        col&ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_margin="5dp"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="8dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="@string/oneM"-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:gravity="center_vertical|center_horizontal"/>-->
+
+<!--                <View-->
+<!--                    android:id="@+id/divider1"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="?android:attr/listDivider" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:text="$ 5"-->
+<!--                    android:gravity="center_vertical|center_horizontal"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#F89106"-->
+<!--                    android:gravity="center_vertical|center_horizontal"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="UPGRADE"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="14dp" />-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        &lt;!&ndash;        col&ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_margin="5dp"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="8dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                android:orientation="vertical">-->
+
+<!--                &lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_gravity="center_vertical"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:src="@drawable/custom_checkbox"></ImageView>&ndash;&gt;-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="@string/threeM"-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:gravity="center_vertical|center_horizontal"/>-->
+
+<!--                <View-->
+<!--                    android:id="@+id/divider2"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="?android:attr/listDivider" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:text="$ 14.95"-->
+<!--                    android:gravity="center_vertical|center_horizontal"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#F89106"-->
+<!--                    android:gravity="center_vertical|center_horizontal"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="UPGRADE"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="14dp"/>-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        &lt;!&ndash;        col&ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_margin="5dp"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="8dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                android:orientation="vertical">-->
+
+<!--                &lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_gravity="center_vertical"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:src="@drawable/custom_checkbox"></ImageView>&ndash;&gt;-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="@string/sixM"-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:gravity="center_vertical|center_horizontal"/>-->
+
+<!--                <View-->
+<!--                    android:id="@+id/divider3"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="?android:attr/listDivider" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:text="$ 28.95"-->
+<!--                    android:gravity="center_vertical|center_horizontal"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#F89106"-->
+<!--                    android:gravity="center_vertical|center_horizontal"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="UPGRADE"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="14dp"/>-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        &lt;!&ndash;        col&ndash;&gt;-->
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_rowWeight="1"-->
+<!--            android:layout_columnWeight="1"-->
+<!--            android:layout_margin="5dp"-->
+<!--            app:cardCornerRadius="8dp"-->
+<!--            app:cardElevation="8dp">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_gravity="center_horizontal|center_vertical"-->
+<!--                android:orientation="vertical">-->
+
+<!--                &lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:layout_gravity="center_vertical"&ndash;&gt;-->
+<!--                &lt;!&ndash;                    android:src="@drawable/custom_checkbox"></ImageView>&ndash;&gt;-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="@string/twelveM"-->
+<!--                    android:elevation="10dp"-->
+<!--                    android:gravity="center_vertical|center_horizontal"/>-->
+
+<!--                <View-->
+<!--                    android:id="@+id/divider4"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:background="?android:attr/listDivider" />-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="3"-->
+<!--                    android:text="$ 58.95"-->
+<!--                    android:gravity="center_vertical|center_horizontal"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textColor="@android:color/black"-->
+<!--                    android:textSize="18dp"-->
+<!--                    android:textStyle="bold" />-->
+<!--                <TextView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="0dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:background="#F89106"-->
+<!--                    android:gravity="center_vertical|center_horizontal"-->
+<!--                    android:padding="5dp"-->
+<!--                    android:text="UPGRADE"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:textSize="14dp" />-->
+<!--            </LinearLayout>-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+
+<!--    </GridLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:layout_weight="6"-->
+<!--        android:orientation="vertical"></LinearLayout>-->
+
+</RelativeLayout>

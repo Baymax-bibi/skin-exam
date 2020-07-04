@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/img_dashbord"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="30dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:src="@drawable/logo"
+        android:layout_margin="20dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <EditText
+                android:id="@+id/edtOldPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleY="0.8"
+                app:fontFamily="sans-serif"
+                android:hint="Old Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/edtNewPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleY="0.8"
+                app:fontFamily="sans-serif"
+                android:hint="New Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/edtConfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleY="0.8"
+                app:fontFamily="sans-serif"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="5dp"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/btnSubmit_pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:fontFamily="sans-serif"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:background="@drawable/selector_button"
+                android:text="@string/btn_submit"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

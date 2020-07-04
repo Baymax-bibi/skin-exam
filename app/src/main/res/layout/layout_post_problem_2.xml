@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/img_dashbord"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_title"
+                android:layout_below="@id/s_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal"
+                android:background="@color/light_primary">
+
+                <TextView
+                    android:id="@+id/pre_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pre_title"
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pre_title_con"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    app:fontFamily="sans-serif"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_concern"
+                android:layout_below="@id/ll_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="center_horizontal|center_vertical"
+                android:background="@color/light_primary"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/pre_concern"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.5"
+                    android:textColor="@android:color/black"
+                    android:text="@string/concern"
+                    app:fontFamily="sans-serif"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pre_concern_con"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    app:fontFamily="sans-serif"
+                    android:text="" />
+            </LinearLayout>
+
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_below="@id/ll_concern"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+            </androidx.viewpager.widget.ViewPager>
+
+
+            <LinearLayout
+                android:id="@+id/ll_age"
+                android:layout_below="@id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/light_primary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/age_prev"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAlignment="center"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    app:fontFamily="sans-serif"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_health"
+                android:layout_below="@id/ll_age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/light_primary"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/health_prev"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    app:fontFamily="sans-serif"
+                    android:textColor="@android:color/black"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/state_prev"
+                android:layout_below="@id/ll_health"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/state"
+                android:textColor="@android:color/black"
+                app:fontFamily="sans-serif"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/state_prev_content"
+                android:layout_below="@id/state_prev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@android:color/black"
+                android:background="@color/light_primary"
+                app:fontFamily="sans-serif"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/bodypart_prev"
+                android:layout_below="@id/state_prev_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/body"
+                android:textColor="@android:color/black"
+                app:fontFamily="sans-serif"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bodypart_prev_content"
+                android:layout_below="@id/bodypart_prev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/light_primary"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                app:fontFamily="sans-serif"
+                android:text="" />
+            <TextView
+                android:id="@+id/prior_prev"
+                android:layout_below="@id/bodypart_prev_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:text="@string/prior"
+                android:textColor="@android:color/black"
+                app:fontFamily="sans-serif"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/prior_prev_content"
+                android:layout_below="@id/prior_prev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/light_primary"
+                android:textColor="@android:color/black"
+                android:text=""
+                app:fontFamily="sans-serif"
+                android:textSize="14sp"  />
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/btnNext_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:drawableRight="@drawable/icon_btn_next"
+        android:drawablePadding="10dp"
+        android:elevation="3dp"
+        android:gravity="right|center_vertical"
+        android:text="@string/next"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RtlSymmetry"
+        android:background="@color/colorPrimary"
+        app:fontFamily="sans-serif"
+        android:textColor="@android:color/white"/>
+
+</LinearLayout>

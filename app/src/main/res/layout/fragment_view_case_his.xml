@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/choose"
+        android:gravity="center_vertical|center_horizontal"
+        android:elevation="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="30dp"
+            android:drawableLeft="@drawable/all_cases_small"
+            android:text="History"
+            android:paddingRight="30dp"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical">
+
+        <ScrollView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:elevation="3dp"
+                    android:text="@string/title"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtSummery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:elevation="3dp"
+                    android:text="@string/summery"
+                    android:textSize="16sp" />
+
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/recentViewpager"
+                    android:layout_width="match_parent"
+                    android:layout_height="222dp"
+                    android:layout_margin="5dp"
+                    android:elevation="3dp">
+
+                </androidx.viewpager.widget.ViewPager>
+
+                <me.relex.circleindicator.CircleIndicator
+                    android:id="@+id/indicator"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/recentViewpager"
+                    app:ci_drawable="@drawable/circleindicator_round"
+                    app:ci_height="5dp"
+                    app:ci_width="5dp" />
+
+                <TextView
+                    android:background="#e4e4e4"
+                    android:id="@+id/txtDocReply"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:fontFamily="sans-serif"
+                    android:paddingBottom="20dp"
+                    android:text="Doctor Reply : "
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</LinearLayout>
+
+

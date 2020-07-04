@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".splah.Dash_all"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:id="@+id/history_act">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <View
+        android:layout_marginTop="3dp"
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/choose"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:paddingLeft="30dp"
+            android:drawableLeft="@drawable/all_cases_small"
+            android:text="History"
+            android:paddingRight="30dp"
+            android:textSize="16dp"/>
+    </LinearLayout>
+    <View
+        android:layout_marginTop="3dp"
+        android:id="@+id/divider7"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+                <ListView
+                    android:id="@+id/allcase_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <Space
+        android:id="@+id/s_0"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+    <TextView
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:layout_below="@id/s_0"
+        android:text="Case Submission"
+        android:gravity="center_horizontal" />
+    <Space
+        android:id="@+id/s_1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/top"/>
+
+    <TextView
+        android:id="@+id/subscriptiontext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="sans-serif"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:layout_above="@id/s_2"
+        android:text="Your images will be discarded after you receive your answer.\n(Subscribe to not lose your images)"
+        android:gravity="center_horizontal" />
+    <Space
+        android:id="@+id/s_2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@id/caseSubmit"/>
+
+    <TextView
+        android:id="@+id/caseSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:fontFamily="sans-serif"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/mybutton"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Submit"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+</RelativeLayout>

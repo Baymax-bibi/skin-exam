@@ -1,0 +1,120 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#eeeeee">
+
+    <LinearLayout
+        android:id="@+id/llfragment_add_cases"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        tools:context="com.Skinexam.fragments.AddCaseFragment">
+
+        <TextView
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="sans-serif"
+            android:background="#F89106"
+            android:padding="5dp"
+            android:text="Select start and end date to see all cases sorted by date."
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="sans-serif"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="25dp"
+            android:drawableLeft="@drawable/icon_calander"
+            android:drawablePadding="5dp"
+            android:text="From: "
+            android:padding="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/txtTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="sans-serif"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:drawableLeft="@drawable/icon_calander"
+            android:drawablePadding="5dp"
+            android:text="To: "
+            android:padding="10dp"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="sans-serif"
+            android:layout_margin="20dp"
+            android:background="@drawable/selector_button"
+            android:text="@string/btn_submit"
+            android:textColor="#FFFFFF"
+            android:padding="10dp"/>
+
+        <!--<TextView
+            android:id="@+id/lblMessage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F89106"
+            android:padding="5dp"
+            android:text="Click on image to see case detail"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />-->
+
+<!--        <androidx.viewpager.widget.ViewPager-->
+<!--            android:id="@+id/ticket_image"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_marginTop="15dp" />-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/myall_re"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <ListView
+                android:id="@+id/myall_pe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <!--        <android.support.v4.view.ViewPager-->
+<!--            android:id="@+id/ticket_image"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:layout_marginTop="15dp" />-->
+
+    </LinearLayout>
+
+</ScrollView>

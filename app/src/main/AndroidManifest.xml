@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.skinexam.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+
+    <!-- Samsung -->
+    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" />
+
+    <!-- Sony -->
+    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" />
+
+    <!-- HTC -->
+    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/icon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name="com.skinexam.myapplication.splah.SignInActivity">
+        </activity>
+
+                <activity
+                    android:name="com.skinexam.myapplication.MainActivity"
+
+                    android:theme="@style/AppTheme.NoActionBar">
+                    <intent-filter>
+                        <action android:name="android.intent.action.MAIN" />
+
+                        <category android:name="android.intent.category.LAUNCHER" />
+                    </intent-filter>
+                </activity>
+
+        <activity android:name="com.skinexam.myapplication.splah.PostProblemActivity_1">
+        </activity>
+        <activity android:name=".splah.SplashActivity">
+        </activity>
+        <activity android:name=".splah.GoogleActivity">
+        </activity>
+        <activity android:name="com.skinexam.myapplication.splah.PostProblemActivity_2">
+        </activity>
+        <activity android:name="com.skinexam.myapplication.splah.PostProblemActivity_3">
+        </activity>
+        <activity android:name="com.skinexam.myapplication.splah.ForgetPasswordActivity">
+        </activity>
+        <activity android:name="com.skinexam.myapplication.splah.UserRegister">
+        </activity>
+        <activity android:name="com.skinexam.myapplication.splah.ViewDetail">
+        </activity>
+        <activity android:name="com.skinexam.myapplication.splah.PrivacyPolicyActivity">
+        </activity>
+        <activity android:name="com.skinexam.myapplication.splah.HistroryActivity">
+        </activity>
+        <activity android:name="com.skinexam.myapplication.splah.Subscription">
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

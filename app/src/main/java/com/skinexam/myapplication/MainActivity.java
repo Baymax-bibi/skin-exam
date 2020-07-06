@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
         showBasicSplash();
     }
-
+// 
     private void showBasicSplash() {
         new Thread(){
             @Override

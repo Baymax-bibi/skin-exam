@@ -5,10 +5,7 @@ package com.skinexam.myapplication.utils;
  */
 public class Constants {
 
-    //public static final String URL="http://skinexams.php-dev.in/api/api_new/";
-    //HTTPS://skinexam.com
-//    public static final String URL="https://skinexam.com/api/api_new/";
-    public static final String URL="https://skinexam.com/clients/";
+    public static final String URL="";
     //Preferences
     public static final String PACK_PREF_NAME="packPrefName";
     public static final String LOGIN_PREF="loginPrefs";
@@ -19,14 +16,11 @@ public class Constants {
 
     //Registration
     public static final String STUDENT_REGISTER = URL+"api_register.php";
-//    public static final String STUDENT_REGISTER = "https://blessing.skinexam.com/clients/api_register.php";
     //Login and pending and recent cases
     public static final String STUDENT_LOGIN = URL + "api_login.php";
-//    public static final String STUDENT_LOGIN = "https://blessing.skinexam.com/clients/api_login.php";
     //Get city for registration
     public static final String CITY=URL+"api_country.php";
 
-//    public static final String STUDENT_DASHBOARD = URL + "api_dashboard.php";
     public static final String MYCASE = URL + "api_mycase.php";
 
     //Edit Profile
